@@ -7,6 +7,8 @@ def report(path,file,action,destinationPath="",):
     actions={0:"Creating",1:"Copying",2:"Removing",3:""}
     if(action==1):
         file.write(actions[action]+" "+path+" to "+destinationPath+"\n")
+    elif(action==3):
+        file.write(path+"\n")
     else:
         file.write(actions[action]+" "+path+"\n")
 
