@@ -40,7 +40,7 @@ def main(argv):
     while(True):
         logFile=open(logFilePath,"a")
         timeNow=datetime.datetime.now()
-        report(str(timeNow)+" Synchro",logFile,3)
+        report((str(timeNow)+" Synchro").strip(),logFile,3)
         folderExists=os.path.isdir(replicaFolder)
         if(not folderExists):
             try:
